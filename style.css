@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    margin-bottom: 14.2%;
+    overflow-x: hidden;
+}
+
+.sidebar {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: black;
+}
+
+.component-i {
+    padding: 4%;
+    font-size: 1.1em;
+    height: max-content;
+    border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(128, 128, 128, 0.15);
+}
+
+
+ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+ul li:hover {
+    color: white;
+}
+
+i {
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+i:hover {
+    color: white;
+}
+
+.library {
+    font-size: 1.1em;
+    padding: 4%;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: rgba(128, 128, 128, 0.15);
+}
+
+.library ul {
+    display: flex;
+}
+
+.library ul li:first-child {
+    margin-right: auto;
+}
+
+.library ul li:last-child {
+    margin-left: 7%;
+}
+
+.artists {
+    padding: 4%;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: rgba(128, 128, 128, 0.15);
+}
+
+.artists button {
+    background-color: rgba(128, 128, 128, 0.3);
+    padding-inline: 3%;
+    padding-block: 2%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.artists button:hover {
+    background-color: rgba(128, 128, 128, 0.4);
+}
+
+.component-iv {
+    padding: 4%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: rgba(128, 128, 128, 0.15);
+}
+
+.component-iv .search {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.1);
+    cursor: pointer;
+    margin-right: auto;
+    transition: background-color 0.2s ease;
+}
+
+.component-iv .search:hover {
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+.artists_lists {
+    display: flex;
+    flex-direction: column;
+    height: 47%;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: rgba(128, 128, 128, 0.15);
+}
+
+.artists_lists>div {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    padding-inline: 4%;
+}
+
+.artists_pp {
+    height: 70%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.artists_lists .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.artists_lists .info span {
+    font-size: 0.9em;
+
+}
+
+.artists_lists .info span:first-child {
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: white;
+}
+
+.artist_1 {
+    background: url('assets/selena.jpg');
+    background-size: cover;
+}
+
+.artist_2 {
+    background: url('assets/justin.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.artist_3 {
+    background: url('assets/taylor.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.artist_4 {
+    background: url('assets/camilla.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.artist_5 {
+    background: url('assets/udit.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.footer {
+    box-shadow: 0 0 10px gray;
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    padding: 4% 2%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8em;
+    background-color: black;
+}
+
+.footer>div:first-child {
+    width: 30%;
+}
+
+.footer>div {
+    height: 80px;
+    display: flex;
+    gap: 3%;
+    align-items: center;
+}
+
+.footer>div .now_playing {
+    height: 80%;
+    aspect-ratio: 1;
+    border-radius: 10px;
+    background: url('assets/nowplaying.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.footer_comp-ii {
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.now_playing_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.now_playing_info span:first-child {
+    color: white;
+}
+
+.controls {
+    width: 100%;
+    display: flex;
+    gap: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.controls i {
+    transform: scale(1.7);
+}
+
+.progress {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: 1%;
+}
+
+.progress div {
+    width: 80%;
+    background: rgb(96, 96, 96);
+    background-image: linear-gradient(to right, white, white 40%, transparent 40%);
+    height: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.random_icons {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.random_icons i {
+    transform: scale(1.7);
+    margin-inline: 10px;
+}
+
+main {
+    height: max-content;
+    width: 100%;
+    padding: 0.4%;
+    margin-left: 25.5%;
+    border-radius: 10px;
+    background: rgba(128, 128, 128, 0.15);
+}
+
+main>div:first-child {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+main>div:first-child .icons {
+    display: flex;
+    gap: 20%;
+}
+
+main>div:first-child .icons i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    border-radius: 50%;
+    height: 30px;
+    aspect-ratio: 1;
+}
+
+.main_component-ii {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 3%;
+    width: 50%;
+}
+
+.main_component-ii button {
+    border-radius: 10px;
+    padding: 1% 3%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.main_component-ii button:hover {
+    background-color: rgb(116, 116, 246);
+}
+
+.prev_played {
+    display: flex;
+    width: 100%;
+    height: 245px;
+    padding: 2%;
+}
+
+.prev_played .first {
+    width: 200px;
+    padding: 1%;
+}
+
+.prev_played .first .first_bg {
+    border-radius: 10px;
+    height: 160px;
+    background: url('assets/nowplaying.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.prev_played .first span:first-child {
+    margin-top: 3px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    font-size: 0.9em;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.to_played {
+    display: flex;
+    width: 100%;
+    padding: 2%;
+    flex-wrap: wrap;
+}
+
+.to_played .card {
+    width: 200px;
+    padding: 1%;
+}
+
+.to_played .card .first_bg {
+    border-radius: 10px;
+    height: 160px;
+    background: url('assets/chaleya.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.to_played .card span:first-child {
+    margin-top: 3px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    font-size: 0.9em;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.to_played .second .first_bg {
+    background: url('assets/pathaan.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.to_played .third .first_bg {
+    background: url('assets/maila.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.to_played .fourth .first_bg {
+    background: url('assets/ghungroo.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.to_played .fifth .first_bg {
+    background: url('assets/desi.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.to_played .sixth .first_bg {
+    background: url('assets/ran.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.to_played .seventh .first_bg {
+    background: url('assets/rolex.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.to_played .eighth .first_bg {
+    background: url('assets/king.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.to_played .ninth .first_bg {
+    background: url('assets/salman.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.to_played .tenth .first_bg {
+    background: url('assets/leo.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #595959;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
