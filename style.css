@@ -321,6 +321,7 @@ main>div:first-child .icons i {
     justify-content: flex-end;
     gap: 3%;
     width: 50%;
+    margin-right: 10px;
 }
 
 .main_component-ii button {
