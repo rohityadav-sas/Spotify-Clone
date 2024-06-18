@@ -3,7 +3,7 @@
 This repository contains the user interface (UI) for a Spotify Web Player. It's a static representation of the Spotify player without backend functionality.
 
 ## Preview
-![preview.png](./assets/preview.png?raw=)
+![preview.png](./assets/preview.png?raw=true)
 
 ## Technologies Used
 - HTML
