@@ -1,5 +1,7 @@
 # Spotify Web Player UI
+A user-friendly and immersive interface inspired by Spotify's Web Player. This project features a sleek dark theme that captures Spotify's aesthetic while adding a unique twist.
 
+## Table of Contents
 - [Preview](#preview)
 - [Features](#features)
 - [Installation](#installation)
