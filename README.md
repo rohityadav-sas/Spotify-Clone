@@ -18,7 +18,7 @@
    git clone https://github.com/rohityadav-sas/Spotify-Clone
    ```
 
-2. Open index.html in your web browser.
+2. Open ```index.html``` in your web browser.
 
 ## License
 
