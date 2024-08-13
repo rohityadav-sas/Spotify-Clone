@@ -1,32 +1,29 @@
 # Spotify Web Player UI
 
 - [Preview](#preview)
-- [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-- [Screenshots](#screenshots)
-- [Contributing](#contributing)
+- [Features](#features)
+- [Installation](#installation)
 - [License](#license)
-- [Acknowledgments](#acknowledgments)
+- [Contributing](#contributing)
 
 ## Preview
 ![preview.png](./assets/preview.png?raw=true)
 
-## Technologies Used
-- HTML
-- CSS
-- FontAwesome Icons
+## Features
+- Minimalistic and clean UI.
 
-## Getting Started
-To view the static UI, simply open the `index.html` file in a web browser.
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/rohityadav-sas/Spotify-Clone
+   ```
 
-## Screenshots
-Include screenshots of different sections of the UI if necessary.
-
-## Contributing
-Contributions are not applicable for this repository as it's a static UI.
+2. Open index.html in your web browser.
 
 ## License
-This project is licensed under the [MIT License](LICENSE).
 
-## Acknowledgments
-- FontAwesome for providing icons.
+This project is licensed under the ISC License. See the [LICENSE](./LICENSE) file for details.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
